@@ -1,0 +1,52 @@
+@import url("./variables.css");
+
+.header {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100vw;
+	z-index: 1000;
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	height: 100px;
+}
+
+.header__title {
+	color: var(--white);
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.header__list {
+	display: flex;
+	gap: 32px;
+}
+
+.header__item {
+	transition: transform 0.5s;
+	color: var(--white);
+}
+
+.header__item:hover {
+	transform: scale(1.1);
+}
+
+.header__item::before {
+	content: none;
+}
+
+@media (max-width: 767px) {
+	.header__nav {
+		display: none;
+	}
+
+	.header {
+		position: static;
+		background: var(--black);
+	}
+}

@@ -1,0 +1,48 @@
+.feedback__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.feedback__item-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.feedback__item-smile {
+	width: 50px;
+	height: 50px;
+}
+
+.feedback__item-title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.feedback__item-text {
+	flex: 1 1 100%;
+}
+
+.feedback__item-text,
+.feedback__item-date {
+	margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+	.feedback {
+		overflow: hidden;
+	}
+
+	.feedback__grid {
+		display: flex;
+		overflow: auto;
+	}
+
+	.feedback__grid::-webkit-scrollbar {
+		display: none;
+	}
+
+	.feedback__item {
+		min-width: 296px;
+	}
+}

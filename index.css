@@ -1,0 +1,34 @@
+/* Imports */
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./global.css);
+@import url(./header.css);
+@import url(./about.css);
+@import url(./services.css);
+@import url(./promo.css);
+@import url(./feedback.css);
+@import url(./contacts.css);
+@import url(./footer.css);
+@import url(./aside.css);
+
+/* Global */
+
+.section__wrapper--contacts {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.section__wrapper--contacts .section__item {
+	display: flex;
+	flex-direction: column;
+	cursor: auto;
+}
+
+.section__wrapper--contacts .section__item :first-child {
+	margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+	.section__wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

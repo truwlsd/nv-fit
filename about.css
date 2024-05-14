@@ -1,0 +1,21 @@
+.about__title {
+	padding-top: 94px;
+}
+
+.about__subtitle {
+	margin-bottom: 18px;
+}
+
+.about__text {
+	margin-bottom: 40px;
+}
+
+.about__item:not(:last-child) {
+	margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+	.about__title {
+		padding-top: 24px;
+	}
+}
